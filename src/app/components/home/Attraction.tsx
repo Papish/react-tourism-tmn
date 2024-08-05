@@ -24,7 +24,27 @@ export default function Attraction() {
             className="w-full h-full"
           ></Image>
         </div>
-        <div className="h-full w-full flip-card bg-grey-100">
+        <div className="relative h-full w-full group">
+          <div className="group-hover:fadeInScale opacity-0 absolute inset-0 bg-black/50 z-10">
+            <div className="flex h-full justify-center items-center text-center flex-col">
+              <div className="text-5xl font-semibold text-white italic">
+                Hiking
+              </div>
+              <div className="w-1/2 text-white text-sm mt-6">
+                We have over 12 different trips for you to trek all over the
+                hills and himalayas of Nepal. Contact us to learn more.
+              </div>
+            </div>
+          </div>
+          <Image
+            src="/img-2.jpg"
+            width={1000}
+            height={1000}
+            alt="pokhara"
+            className="w-full h-full"
+          ></Image>
+        </div>
+        {/* <div className="h-full w-full flip-card bg-grey-100">
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <Image
@@ -45,7 +65,7 @@ export default function Attraction() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

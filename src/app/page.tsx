@@ -3,6 +3,7 @@ import { getAllPosts } from "./posts/lib/posts";
 import PopularPackages from "./components/home/Packages";
 import WhyChooseUs from "./components/home/WhyChooseUs";
 import Attraction from "./components/home/Attraction";
+import Team from "./components/home/Team";
 
 export default function Home() {
   const posts = getAllPosts();
@@ -134,6 +135,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <Team />
     </>
   );
 }
