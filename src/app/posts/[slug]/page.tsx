@@ -12,7 +12,7 @@ export default function Post({ params }: { params: { slug: string } }) {
   const postData = getPostDataBySlug(params.slug);
 
   return (
-    <>
+    <div className="mt-32">
       <div className="text-xs text-gray-500 mb-8 text-center">
         {postData.date}
       </div>
@@ -25,7 +25,7 @@ export default function Post({ params }: { params: { slug: string } }) {
         src={postData.image}
         alt="Post image"
         width={500}
-        height={100}
+        height={200}
         className="w-full h-auto"
       />
       {postData.description && (
@@ -38,6 +38,14 @@ export default function Post({ params }: { params: { slug: string } }) {
         className="mx-auto max-w-3xl blog"
         dangerouslySetInnerHTML={{ __html: md.render(postData.content) }}
       ></div>
-    </>
+    </div>
   );
+}
+
+export async function generateStaticParams() {
+  return [
+    {
+      slug: "test-one",
+    },
+  ];
 }

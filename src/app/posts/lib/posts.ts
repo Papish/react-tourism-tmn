@@ -1,34 +1,11 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { PostList } from "@/app/types";
 
 const postsDirectory = path.join(process.cwd(), "src/app/posts/articles");
 
-// export function getSortedPostsData() {
-//   const fileNames = fs.readdirSync(postsDirectory);
-//   const allPostsData = fileNames.map((fileName) => {
-//     const id = fileName.replace(/\.md$/, "");
-//     const fullPath = path.join(postsDirectory, fileName);
-//     const fileContents = fs.readFileSync(fullPath, "utf8");
-//     const matterResult = matter(fileContents);
-
-//     return {
-//       id,
-//       date:
-//       ...matterResult.data,
-//     };
-//   });
-
-//   return allPostsData.sort((a, b) => {
-//     if (a.date < b.date) {
-//       return 1;
-//     } else {
-//       return -1;
-//     }
-//   });
-// }
-
-export function getAllPostIds() {
+export function getAllPosts(): PostList[] {
   const fileNames = fs.readdirSync(postsDirectory);
   return fileNames.map((fileName) => {
     const fullPath = path.join(postsDirectory, fileName);
