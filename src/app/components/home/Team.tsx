@@ -1,6 +1,25 @@
 import Image from "next/image";
+import TeamCard from "./TeamCard";
 
 export default function Team() {
+  const teams = [
+    {
+      name: "Micheal Scott",
+      role: "CEO",
+      image: "/images/team/ceo2.jpg",
+    },
+    {
+      name: "Dwight Schrute",
+      role: "Vice Chairmain",
+      image: "/images/team/ceo3.jpg",
+    },
+    {
+      name: "Jim Halpert",
+      role: "CTO",
+      image: "/images/team/ceo4.jpg",
+    },
+  ];
+
   return (
     <section className="bg-white dark:bg-gray-900 py-24">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
@@ -9,11 +28,11 @@ export default function Team() {
             Our Team
           </h2>
           <p className="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
-            Explore the whole collection of open-source web components and
-            elements built with the utility classes from Tailwind
+            Meet our dedicated team members who will make your journey memorable
+            and exciting. We are glad to meet you.
           </p>
         </div>
-        <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+        {/* <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
           <div className="items-start flex">
             <a href="#" className="rounded-full overflow-hidden">
               <Image
@@ -37,6 +56,12 @@ export default function Team() {
               </p>
             </div>
           </div>
+        </div> */}
+
+        <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-3 h-[400px]">
+          {teams.map((team, index) => (
+            <TeamCard key={index} team={team} />
+          ))}
         </div>
       </div>
     </section>

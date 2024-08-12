@@ -44,28 +44,6 @@ export default function Attraction() {
             className="w-full h-full"
           ></Image>
         </div>
-        {/* <div className="h-full w-full flip-card bg-grey-100">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <Image
-                src="/img-2.jpg"
-                alt="Avatar"
-                width={1000}
-                height={1000}
-                className="w-full h-full"
-              />
-            </div>
-            <div className="flip-card-back flex flex-col justify-center items-center">
-              <div className="text-5xl font-semibold text-white italic">
-                Trekking
-              </div>
-              <div className="w-1/2 text-white text-sm mt-6">
-                We have over 12 different trips for you to trek all over the
-                hills and himalayas of Nepal. Contact us to learn more.
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );

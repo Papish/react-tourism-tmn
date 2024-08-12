@@ -61,9 +61,9 @@ export default function WhyChooseUs() {
               <div className="animated relative pl-28">
                 <dt className="text-base font-semibold leading-7 text-blue-900">
                   <div className="absolute left-0 top-0 flex h-20 w-20 items-center justify-center rounded-full bg-[#0072c0]">
-                    <i className="fa-solid fa-globe text-white fa-lg"></i>
+                    <i className="fa-solid fa-shop text-white fa-lg"></i>
                   </div>
-                  Diverse Destinations
+                  Culture & Heritage
                 </dt>
                 <dd className="mt-2 text-base leading-7 text-gray-600">
                   We are authorized to acquire a license to operate Travel,
@@ -74,9 +74,9 @@ export default function WhyChooseUs() {
               <div className="animated relative pl-28">
                 <dt className="text-base font-semibold leading-7 text-blue-900">
                   <div className="absolute left-0 top-0 flex h-20 w-20 items-center justify-center rounded-full bg-[#0072c0]">
-                    <i className="fa-solid fa-globe text-white fa-lg"></i>
+                    <i className="fa-solid fa-calendar-days text-white fa-lg"></i>
                   </div>
-                  Diverse Destinations
+                  20 year`s of Service
                 </dt>
                 <dd className="mt-2 text-base leading-7 text-gray-600">
                   We are authorized to acquire a license to operate Travel,

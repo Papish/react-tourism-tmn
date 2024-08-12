@@ -16,6 +16,7 @@ export function getAllPosts(): PostList[] {
       id: fileName.replace(/\.md$/, ""),
       slug: fileName.replace(/\.md$/, ""),
       shortTitle: matterResult.data.shortTitle,
+      image: matterResult.data.image,
     };
   });
 }

@@ -23,13 +23,13 @@ export default function PopularPackages({ posts = [] }: Props) {
             key={post.id}
             className="relative rounded-lg bg-white overflow-hidden hover:shadow-lg shadow border border-gray-200"
           >
-            <div className="absolute z-10 top-4 left-2 bg-red-500 rounded-lg px-3 py-1 animate-bounce text-white">
+            <div className="absolute z-10 top-2 left-2 bg-red-500 rounded-lg px-3 py-1 animate-pulse text-white">
               Top picks
             </div>
             <Link href={`posts/${post.slug}`} className="cursor-pointer">
               <div className="w-full h-[300px] overflow-hidden">
                 <Image
-                  src="/pokhara.jpg"
+                  src={post.image}
                   alt="pokhara"
                   className="h-full w-full object-cover object-center transition-transform duration-300 transform hover:scale-110"
                   width={500}

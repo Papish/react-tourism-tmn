@@ -17,15 +17,15 @@ export default function TheNavbar() {
       }`}
     >
       <nav
-        className="flex items-center justify-between p-6 lg:px-8"
+        className="flex items-center justify-between px-20 py-2"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <Image
-              className="h-4 w-auto"
-              src="/next.svg"
+              className="h-24 w-auto leading-none"
+              src="/images/logo.png"
               alt=""
               width={100}
               height={100}
@@ -103,7 +103,7 @@ export default function TheNavbar() {
                 <span className="sr-only">Your Company</span>
                 <Image
                   className="h-4 w-auto"
-                  src="/next.svg"
+                  src="/image/logo.png"
                   alt=""
                   width={100}
                   height={100}
