@@ -4,19 +4,19 @@ import TeamCard from "./TeamCard";
 export default function Team() {
   const teams = [
     {
-      name: "Micheal Scott",
-      role: "CEO",
-      image: "/images/team/ceo2.jpg",
+      name: "Shakti Yonjan",
+      role: "",
+      image: "/images/team/shakti-yonjan.jpeg",
     },
     {
-      name: "Dwight Schrute",
-      role: "Vice Chairmain",
-      image: "/images/team/ceo3.jpg",
+      name: "Jiwan Shrestha",
+      role: "",
+      image: "/images/team/jiwan-shrestha.jpeg",
     },
     {
-      name: "Jim Halpert",
-      role: "CTO",
-      image: "/images/team/ceo4.jpg",
+      name: "Nabin Shrestha",
+      role: "",
+      image: "/images/team/nabin-shrestha.jpeg",
     },
   ];
 
@@ -58,7 +58,7 @@ export default function Team() {
           </div>
         </div> */}
 
-        <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-3 h-[400px]">
+        <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-3 h-[500px]">
           {teams.map((team, index) => (
             <TeamCard key={index} team={team} />
           ))}
